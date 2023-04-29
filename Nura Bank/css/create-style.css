@@ -185,8 +185,8 @@ body main section .container .create form .column label {
   font-size: 20px;
   color: #3c486b;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 10px;
+  margin-top: 25px;
 }
 body main section .container .create form .column input {
   border: 2px solid #3c486b;
@@ -210,8 +210,10 @@ body main section .container .create form .column #idpic::-webkit-file-upload-bu
   padding-bottom: 6px;
   border-radius: 20px;
 }
-body main section .container .create form button {
+body main section .container .create form .button {
   clear: both;
+}
+body main section .container .create form .button button {
   text-align: center;
   margin-top: 50px;
   border: none;
@@ -224,7 +226,7 @@ body main section .container .create form button {
   transition: all 0.4s;
   cursor: pointer;
 }
-body main section .container .create form button:hover {
+body main section .container .create form .button button:hover {
   background-color: #f9d949;
   transition: all 0.4s;
 }
