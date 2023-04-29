@@ -128,4 +128,140 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  background-image: linear-gradient(to right top, #3c486b 20%, #f45050 80%, #f9d949);
+  height: 100%;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+body header h1 {
+  text-align: center;
+  margin-top: 5vh;
+  padding-top: -20px;
+  font-family: "Courgette", cursive;
+  font-size: 60px;
+  color: #f0f0f0;
+}
+body main {
+  height: 85vh;
+  margin-top: 40px;
+}
+body main section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+body main section .container .create {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 40px;
+  width: 50%;
+}
+body main section .container .create .title {
+  text-align: center;
+}
+body main section .container .create .title span {
+  font-family: "Noto Serif", serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3c486b;
+}
+body main section .container .create form {
+  text-align: center;
+}
+body main section .container .create form .column {
+  flex-direction: column;
+  display: flex;
+  float: left;
+  width: 50%;
+}
+body main section .container .create form .column label {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  color: #3c486b;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+body main section .container .create form .column input {
+  border: 2px solid #3c486b;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  font-size: 16px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+body main section .container .create form .column #idpic::-webkit-file-upload-button {
+  background-color: #3c486b;
+  color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  margin: -9px;
+  margin-left: -8px;
+  margin-right: 5px;
+  padding: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+}
+body main section .container .create form button {
+  clear: both;
+  text-align: center;
+  margin-top: 50px;
+  border: none;
+  background-color: #f45050;
+  border-radius: 35px;
+  color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  padding: 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body main section .container .create form button:hover {
+  background-color: #f9d949;
+  transition: all 0.4s;
+}
+body main section .container .create .password {
+  text-align: center;
+  margin-top: 30px;
+}
+body main section .container .create .password span {
+  font-family: "Noto Serif", serif;
+  font-size: smaller;
+  font-weight: bolder;
+}
+body main section .container .create .password span a {
+  color: #f45050;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+body main section .container .create .password span a:hover {
+  background-color: #f9d949;
+  transition: all 0.4s;
+}
+body main section .container .create .login {
+  text-align: center;
+  margin-top: 30px;
+}
+body main section .container .create .login span {
+  font-family: "Noto Serif", serif;
+  font-size: smaller;
+  font-weight: bolder;
+  color: #3c486b;
+}
+body main section .container .create .login span a {
+  color: #f45050;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+body main section .container .create .login span a:hover {
+  background-color: #f9d949;
+  transition: all 0.4s;
 }/*# sourceMappingURL=create-style.css.map */
