@@ -174,7 +174,6 @@ body {
 
           .title {
             text-align: center;
-            // margin-bottom: 10px;
             span {
               font-family: $page-font;
               font-size: 25px;
@@ -183,16 +182,13 @@ body {
             }
           }
           form {
-            // display: flex;
-            // flex-direction: column;
-            // display: ;
+
             text-align: center;
             .column {
               flex-direction: column;
               display: flex;
               float: left;
               width: 50%;
-              // margin: 20px;
               label {
                 font-family: $page-font;
                 font-size: 20px;
@@ -207,9 +203,10 @@ body {
                 background-color: $lightest;
                 font-family: $page-font;
                 font-size: 16px;
+                text-align: center;
                 padding: 10px;
-                margin-right: 20px;
-                margin-left: 20px;
+                margin-right: 50px;
+                margin-left: 50px;
               }
               #idpic::-webkit-file-upload-button {
                 background-color: $dark;

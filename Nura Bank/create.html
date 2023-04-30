@@ -43,6 +43,7 @@
                   id="reppassword"
                   name="reppassword"
                   required
+                  onkeyup="check()"
                 />
               </div>
               <div class="column">
@@ -61,7 +62,13 @@
                   required
                 />
                 <label for="id">ID Number</label>
-                <input type="text" id="id" name="id" required />
+                <input
+                  type="text"
+                  id="id"
+                  name="id"
+                  pattern="[0-9]{10}"
+                  required
+                />
                 <label for="idpic">ID Picture</label>
                 <input type="file" id="idpic" name="idpic" />
               </div>
