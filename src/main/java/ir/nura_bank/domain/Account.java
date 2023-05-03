@@ -24,5 +24,5 @@ public class Account extends BaseEntity<Long> {
     private String accountNumber;
 
     @Column(nullable = false)
-    private Long balance;
+    private Long balance = 0L;
 }
