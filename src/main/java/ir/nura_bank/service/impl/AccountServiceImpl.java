@@ -29,5 +29,20 @@ public class AccountServiceImpl extends BaseServiceImpl<Account, Long, AccountRe
         return repository.getTopAccountNumber();
     }
 
+    @Override
+    public Account getNewAccount() {
+
+        String topAccountNumber = getTopAccountNumber().get(0);
+
+        long l = Long.parseLong(topAccountNumber) + 1L;
+
+        String newAccountNumber = "";
+
+        for (int i = 0; i < (10 - String.valueOf(l).length()); i++)
+            newAccountNumber.concat("0");
+
+        return new Account(newAccountNumber, 0L);
+    }
+
 
 }

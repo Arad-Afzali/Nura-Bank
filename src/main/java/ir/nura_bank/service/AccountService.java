@@ -11,4 +11,6 @@ public interface AccountService extends BaseService<Account, Long> {
 
     List<String> getTopAccountNumber();
 
+    Account getNewAccount();
+
 }
