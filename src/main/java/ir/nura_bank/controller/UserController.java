@@ -28,14 +28,12 @@ public class UserController {
 
     @GetMapping
     public ModelAndView homePage() {
-        ModelAndView modelAndView = new ModelAndView("index");
-        return modelAndView;
+        return new ModelAndView("index");
     }
 
     @GetMapping("signup")
     public ModelAndView signup() {
-        ModelAndView modelAndView = new ModelAndView("create");
-        return modelAndView;
+        return new ModelAndView("create");
     }
 
     @PostMapping("signup")
@@ -61,14 +59,17 @@ public class UserController {
 
     @GetMapping("login")
     public ModelAndView login() {
-        ModelAndView modelAndView = new ModelAndView("login");
-        return modelAndView;
+        return new ModelAndView("login");
     }
 
     @GetMapping("/login-failed")
     public ModelAndView loginFailed() {
-        ModelAndView modelAndView = new ModelAndView("login_failed");
-        return modelAndView;
+        return new ModelAndView("login_failed");
+    }
+
+    @GetMapping("/user/dashboard")
+    public ModelAndView dashboard() {
+        return new ModelAndView("dashboard");
     }
 
 
