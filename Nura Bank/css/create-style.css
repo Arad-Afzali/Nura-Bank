@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-image: linear-gradient(to right top, #3c486b 20%, #f45050 80%, #f9d949);
+  height: 100%;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+body header h1 {
+  text-align: center;
+  margin-top: 5vh;
+  padding-top: -20px;
+  font-family: "Courgette", cursive;
+  font-size: 60px;
+  color: #f0f0f0;
+}
+body main {
+  height: 85vh;
+  margin-top: 40px;
+}
+body main section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+body main section .container .create {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 40px;
+  width: 50%;
+}
+body main section .container .create .title {
+  text-align: center;
+}
+body main section .container .create .title span {
+  font-family: "Noto Serif", serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3c486b;
+}
+body main section .container .create form {
+  text-align: center;
+}
+body main section .container .create form .column {
+  flex-direction: column;
+  display: flex;
+  float: left;
+  width: 50%;
+}
+body main section .container .create form .column label {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  color: #3c486b;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px;
+}
+body main section .container .create form .column input {
+  border: 2px solid #3c486b;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+body main section .container .create form .column #idpic::-webkit-file-upload-button {
+  background-color: #3c486b;
+  color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  margin: -9px;
+  margin-left: -8px;
+  margin-right: 5px;
+  padding: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+}
+body main section .container .create form .button {
+  clear: both;
+}
+body main section .container .create form .button button {
+  text-align: center;
+  margin-top: 50px;
+  border: none;
+  background-color: #f45050;
+  border-radius: 35px;
+  color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  padding: 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body main section .container .create form .button button:hover {
+  background-color: #f9d949;
+  transition: all 0.4s;
+}
+body main section .container .create .password {
+  text-align: center;
+  margin-top: 30px;
+}
+body main section .container .create .password span {
+  font-family: "Noto Serif", serif;
+  font-size: smaller;
+  font-weight: bolder;
+}
+body main section .container .create .password span a {
+  color: #f45050;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+body main section .container .create .password span a:hover {
+  background-color: #f9d949;
+  transition: all 0.4s;
+}
+body main section .container .create .login {
+  text-align: center;
+  margin-top: 30px;
+}
+body main section .container .create .login span {
+  font-family: "Noto Serif", serif;
+  font-size: smaller;
+  font-weight: bolder;
+  color: #3c486b;
+}
+body main section .container .create .login span a {
+  color: #f45050;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+body main section .container .create .login span a:hover {
+  background-color: #f9d949;
+  transition: all 0.4s;
+}/*# sourceMappingURL=create-style.css.map */
