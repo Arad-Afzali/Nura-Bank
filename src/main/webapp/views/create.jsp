@@ -20,7 +20,7 @@
         <div class="container">
             <div class="create">
                 <p class="title"><span>Create your Account</span></p>
-                <form>
+                <form action="/signup" method="post">
                     <div class="column">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email"/>
@@ -73,7 +73,7 @@
                 <p class="login">
               <span
               >Already have an Account?
-                <a href="login.jsp">Click here to login</a></span
+                <a href="/login">Click here to login</a></span
               >
                 </p>
             </div>
