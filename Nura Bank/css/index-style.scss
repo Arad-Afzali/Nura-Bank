@@ -223,6 +223,15 @@ body {
   opacity: 1;
 }
 
+#middle-line {
+  opacity: 0;
+  transition: ease-in opacity 1s 2s;
+}
+
+#middle-line.visible {
+  opacity: 0.5;
+}
+
 #producers {
   opacity: 0;
   transition: ease-in opacity 1s 2s;
@@ -251,8 +260,6 @@ body {
         width: 90%;
         margin: auto;
         margin-top: 100px;
-        // transition-property: h2;
-        // transition-delay: 2s, 2s;
         .left {
           position: absolute;
           top: 0;
@@ -283,9 +290,6 @@ body {
             font-size: 22px;
             text-align: justify;
             line-height: 35px;
-            // background-color: #2c333371;
-            // background-color: #3c486ba9;
-
             border-bottom-right-radius: 25px;
             border-bottom-left-radius: 25px;
           }
@@ -306,8 +310,35 @@ body {
         }
       }
     }
+
+    hr {
+      border-top: 2px solid $lightest;
+      width: 70%;
+      margin-top: 220px;
+      margin-bottom: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     #producers {
-      margin-top: 100px;
+      text-align: center;
+      h2 {
+        text-align: center;
+        font-size: large;
+        font-family: $page-font;
+        font-weight: bold;
+        font-size: 40px;
+        color: $lightest;
+        padding: 20px;
+
+        display: inline-block;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-bottom: 5px $lightest solid;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-top: 50px;
+      }
       .container {
         .row {
           .column {
@@ -343,10 +374,6 @@ body {
                   font-size: 25px;
                 }
                 #role {
-                  // border-bottom: 1px solid $lightest;
-                  // padding: 5px;
-                  // padding-right: 10px;
-                  // padding-left: 10px;
                   font-family: $page-font;
                   font-size: 17px;
                 }
@@ -358,6 +385,8 @@ body {
                 margin-top: 10px;
                 font-family: $page-font;
                 font-size: 15px;
+                font-weight: lighter;
+                line-height: 1.1;
                 text-align: center;
               }
             }

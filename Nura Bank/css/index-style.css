@@ -207,6 +207,15 @@ body header section #clear {
   opacity: 1;
 }
 
+#middle-line {
+  opacity: 0;
+  transition: ease-in opacity 1s 2s;
+}
+
+#middle-line.visible {
+  opacity: 0.5;
+}
+
 #producers {
   opacity: 0;
   transition: ease-in opacity 1s 2s;
@@ -283,8 +292,32 @@ body main #nura-bank .container .right img {
   margin-top: -100px;
   height: 600px;
 }
+body main hr {
+  border-top: 2px solid #f0f0f0;
+  width: 70%;
+  margin-top: 220px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
 body main #producers {
-  margin-top: 100px;
+  text-align: center;
+}
+body main #producers h2 {
+  text-align: center;
+  font-size: large;
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #f0f0f0;
+  padding: 20px;
+  display: inline-block;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom: 5px #f0f0f0 solid;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top: 50px;
 }
 body main #producers .container .row .column {
   float: left;
@@ -329,6 +362,8 @@ body main #producers .container .row .column .info #brief {
   margin-top: 10px;
   font-family: "Noto Serif", serif;
   font-size: 15px;
+  font-weight: lighter;
+  line-height: 1.1;
   text-align: center;
 }
 body main #producers .container .row::after {

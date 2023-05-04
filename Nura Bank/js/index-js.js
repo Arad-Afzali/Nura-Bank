@@ -1,7 +1,7 @@
 window.onload = function () {
   setTimeout(function () {
     document
-      .querySelectorAll("#header, #nura-bank, #producers, #social-media")
+      .querySelectorAll("#header, #nura-bank,#middle-line, #producers, #social-media")
       .forEach(function (element) {
         element.classList.add("visible");
       });

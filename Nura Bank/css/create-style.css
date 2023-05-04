@@ -138,13 +138,18 @@ body {
   background-position: center center;
   background-size: cover;
 }
+body header {
+  text-align: center;
+}
 body header h1 {
+  display: inline-block;
   text-align: center;
   margin-top: 5vh;
   padding-top: -20px;
   font-family: "Courgette", cursive;
   font-size: 60px;
   color: #f0f0f0;
+  cursor: pointer;
 }
 body main {
   height: 85vh;

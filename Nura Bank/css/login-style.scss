@@ -146,12 +146,16 @@ body {
   background-position: center center;
   background-size: cover;
   header {
+    text-align: center;
+
     h1 {
       text-align: center;
+      display: inline-block;
       margin-top: 9vh;
       font-family: $brand-font;
       font-size: 60px;
       color: #f0f0f0;
+      cursor: pointer;
     }
   }
   main {

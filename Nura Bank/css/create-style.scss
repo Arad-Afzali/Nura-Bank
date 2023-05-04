@@ -146,13 +146,17 @@ body {
   background-position: center center;
   background-size: cover;
   header {
+    text-align: center;
+
     h1 {
+      display: inline-block;
       text-align: center;
       margin-top: 5vh;
       padding-top: -20px;
       font-family: $brand-font;
       font-size: 60px;
       color: $lightest;
+      cursor: pointer;
     }
   }
   main {
@@ -182,7 +186,6 @@ body {
             }
           }
           form {
-
             text-align: center;
             .column {
               flex-direction: column;
