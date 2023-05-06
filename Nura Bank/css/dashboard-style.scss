@@ -129,6 +129,7 @@ $dark: #3c486b;
 $middle: #f45050;
 $light: #f9d949;
 $lightest: #f0f0f0;
+$lightblue: #409fad;
 
 $brand-font: "Courgette", cursive;
 $page-font: "Noto Serif", serif;
@@ -167,30 +168,29 @@ body {
               .profile {
                 .container-2 {
                   transition: all 0.3s;
-                  background-image: linear-gradient(
-                    to right top,
-                    #f45050 50%,
-                    #f9d949
-                  );
-                  height: 40vh;
+                  background-color: $lightblue;
+                  height: 25vh;
                   border-bottom-left-radius: 20px;
                   border-bottom-right-radius: 20px;
+                  border-bottom: 30vh solid;
+                  border-image: linear-gradient(to top, #f0f0f0 2%, #409fad 9%)
+                    10%;
                 }
                 .photo {
                   text-align: center;
                   .img {
                     transition: all 0.3s;
 
-                    background-color: #f0f0f0;
+                    // background-color: #f0f0f0;
                     display: inline-block;
-                    border-radius: 100%;
-                    padding: 8%;
+                    // padding: 8%;
                     margin-top: 3vh;
                     img {
                       transition: all 0.3s;
 
-                      width: 10vh;
-                      height: 10vh;
+                      width: 14vh;
+                      height: 14vh;
+                      border-radius: 100%;
                     }
                   }
                 }
@@ -216,6 +216,29 @@ body {
                 }
               }
             }
+            // balance-----------------------------------------------------------
+            section {
+              .balance-container {
+                .balance-text {
+                  p {
+                    text-align: center;
+                    padding-top: 30px;
+
+                    span {
+                      color: $dark;
+                      font-family: $page-font;
+                      font-size: 25px;
+                    }
+                    .money {
+                      color: $dark;
+                      font-family: $page-font;
+                      font-size: 50px;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+            }
           }
 
           //   left active -------------------------------------
@@ -225,19 +248,20 @@ body {
             width: 90px;
             section {
               transition: all 0.3s;
-
               background-color: $dark;
               .profile {
                 .container-2 {
-                  transition: all 0.3s;
-
                   background-image: none;
                   background-color: $dark;
+                  border-image: none;
+                  border: none;
+                  border-bottom: $dark;
+                  transition: all 0.3s;
+
                   .photo {
                     .img {
                       transition: all 0.3s;
 
-                      background-color: #f0f0f0;
                       display: inline-block;
                       border-radius: 100%;
                       margin-top: 7vh;
@@ -251,7 +275,6 @@ body {
                   .name {
                     .container-3 {
                       .text {
-                        margin-top: 5vh;
                         .hello {
                           display: none;
                         }
@@ -262,6 +285,9 @@ body {
                     }
                   }
                 }
+              }
+              .balance-container {
+                display: none;
               }
             }
           }

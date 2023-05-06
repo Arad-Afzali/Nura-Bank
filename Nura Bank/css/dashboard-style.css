@@ -157,26 +157,27 @@ body main section .container .row .column-left section {
 }
 body main section .container .row .column-left section .profile .container-2 {
   transition: all 0.3s;
-  background-image: linear-gradient(to right top, #f45050 50%, #f9d949);
-  height: 40vh;
+  background-color: #409fad;
+  height: 25vh;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom: 30vh solid;
+  -o-border-image: linear-gradient(to top, #f0f0f0 2%, #409fad 9%) 10%;
+     border-image: linear-gradient(to top, #f0f0f0 2%, #409fad 9%) 10%;
 }
 body main section .container .row .column-left section .profile .photo {
   text-align: center;
 }
 body main section .container .row .column-left section .profile .photo .img {
   transition: all 0.3s;
-  background-color: #f0f0f0;
   display: inline-block;
-  border-radius: 100%;
-  padding: 8%;
   margin-top: 3vh;
 }
 body main section .container .row .column-left section .profile .photo .img img {
   transition: all 0.3s;
-  width: 10vh;
-  height: 10vh;
+  width: 14vh;
+  height: 14vh;
+  border-radius: 100%;
 }
 body main section .container .row .column-left section .profile .name .container-3 .text {
   margin-top: 5vh;
@@ -194,6 +195,21 @@ body main section .container .row .column-left section .profile .name .container
   font-size: 40px;
   font-weight: bold;
 }
+body main section .container .row .column-left section .balance-container .balance-text p {
+  text-align: center;
+  padding-top: 30px;
+}
+body main section .container .row .column-left section .balance-container .balance-text p span {
+  color: #3c486b;
+  font-family: "Noto Serif", serif;
+  font-size: 25px;
+}
+body main section .container .row .column-left section .balance-container .balance-text p .money {
+  color: #3c486b;
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+}
 body main section .container .row .column-left.active {
   transition: all 0.3s;
   width: 90px;
@@ -203,13 +219,16 @@ body main section .container .row .column-left.active section {
   background-color: #3c486b;
 }
 body main section .container .row .column-left.active section .profile .container-2 {
-  transition: all 0.3s;
   background-image: none;
   background-color: #3c486b;
+  -o-border-image: none;
+     border-image: none;
+  border: none;
+  border-bottom: #3c486b;
+  transition: all 0.3s;
 }
 body main section .container .row .column-left.active section .profile .container-2 .photo .img {
   transition: all 0.3s;
-  background-color: #f0f0f0;
   display: inline-block;
   border-radius: 100%;
   margin-top: 7vh;
@@ -219,13 +238,13 @@ body main section .container .row .column-left.active section .profile .containe
   height: 30px;
   transition: all 0.3s;
 }
-body main section .container .row .column-left.active section .profile .container-2 .name .container-3 .text {
-  margin-top: 5vh;
-}
 body main section .container .row .column-left.active section .profile .container-2 .name .container-3 .text .hello {
   display: none;
 }
 body main section .container .row .column-left.active section .profile .container-2 .name .container-3 .text .fname {
+  display: none;
+}
+body main section .container .row .column-left.active section .balance-container {
   display: none;
 }
 body main section .container .column-middle {
