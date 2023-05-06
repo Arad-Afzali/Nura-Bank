@@ -1,0 +1,333 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif:wght@400;700&display=swap");
+
+$dark: #3c486b;
+$middle: #f45050;
+$light: #f9d949;
+$lightest: #f0f0f0;
+
+$brand-font: "Courgette", cursive;
+$page-font: "Noto Serif", serif;
+
+body {
+  .ham-menu {
+    // line-height: 0;
+    #btn {
+      width: 25px;
+      position: absolute;
+      margin-left: 42px;
+      margin-top: 40px;
+    }
+  }
+  main {
+    height: 100vh;
+    background-color: $dark;
+    section {
+      .container {
+        .row {
+          .column-left {
+            transition: all 0.3s;
+            float: left;
+            width: 20%;
+            height: calc(100vh - 40px);
+
+            section {
+              transition: all 0.3s;
+
+              background-color: $lightest;
+              margin: 20px;
+              margin-right: 0px;
+              min-height: 100%;
+              border-radius: 20px;
+              overflow: hidden;
+              .profile {
+                .container-2 {
+                  transition: all 0.3s;
+                  background-image: linear-gradient(
+                    to right top,
+                    #f45050 50%,
+                    #f9d949
+                  );
+                  height: 40vh;
+                  border-bottom-left-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                }
+                .photo {
+                  text-align: center;
+                  .img {
+                    transition: all 0.3s;
+
+                    background-color: #f0f0f0;
+                    display: inline-block;
+                    border-radius: 100%;
+                    padding: 8%;
+                    margin-top: 3vh;
+                    img {
+                      transition: all 0.3s;
+
+                      width: 10vh;
+                      height: 10vh;
+                    }
+                  }
+                }
+                .name {
+                  .container-3 {
+                    .text {
+                      margin-top: 5vh;
+                      .hello {
+                        text-align: center;
+                        font-family: $page-font;
+                        color: $lightest;
+                      }
+                      .fname {
+                        margin-top: 1vh;
+                        text-align: center;
+                        font-family: $page-font;
+                        color: $lightest;
+                        font-size: 40px;
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          //   left active -------------------------------------
+
+          .column-left.active {
+            transition: all 0.3s;
+            width: 90px;
+            section {
+              transition: all 0.3s;
+
+              background-color: $dark;
+              .profile {
+                .container-2 {
+                  transition: all 0.3s;
+
+                  background-image: none;
+                  background-color: $dark;
+                  .photo {
+                    .img {
+                      transition: all 0.3s;
+
+                      background-color: #f0f0f0;
+                      display: inline-block;
+                      border-radius: 100%;
+                      margin-top: 7vh;
+                      img {
+                        width: 30px;
+                        height: 30px;
+                        transition: all 0.3s;
+                      }
+                    }
+                  }
+                  .name {
+                    .container-3 {
+                      .text {
+                        margin-top: 5vh;
+                        .hello {
+                          display: none;
+                        }
+                        .fname {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .column-middle {
+          transition: all 0.3s;
+
+          float: left;
+          width: 40%;
+          height: calc(100vh - 40px);
+
+          section {
+            background-color: $lightest;
+            margin: 20px;
+            margin-right: 0px;
+            min-height: 100%;
+            border-radius: 20px;
+          }
+        }
+        .column-middle.active {
+          transition: all 0.3s;
+
+          float: left;
+
+          width: calc((100% - 180px) / 2);
+          height: calc(100vh - 40px);
+
+          section {
+            background-color: $lightest;
+            margin: 20px;
+            margin-right: 0px;
+            min-height: 100%;
+            border-radius: 20px;
+          }
+        }
+        .column-right {
+          transition: all 0.3s;
+
+          float: left;
+          width: 40%;
+
+          height: calc(100vh - 40px);
+          section {
+            background-color: $lightest;
+            margin: 20px;
+
+            min-height: 100%;
+            border-radius: 20px;
+          }
+        }
+        .column-right.active {
+          transition: all 0.3s;
+
+          float: left;
+          width: calc((100% - 180px) / 2);
+
+          height: calc(100vh - 40px);
+          section {
+            background-color: $lightest;
+            margin: 20px;
+
+            min-height: 100%;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}

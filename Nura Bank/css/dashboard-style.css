@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body .ham-menu #btn {
+  width: 25px;
+  position: absolute;
+  margin-left: 42px;
+  margin-top: 40px;
+}
+body main {
+  height: 100vh;
+  background-color: #3c486b;
+}
+body main section .container .row .column-left {
+  transition: all 0.3s;
+  float: left;
+  width: 20%;
+  height: calc(100vh - 40px);
+}
+body main section .container .row .column-left section {
+  transition: all 0.3s;
+  background-color: #f0f0f0;
+  margin: 20px;
+  margin-right: 0px;
+  min-height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+body main section .container .row .column-left section .profile .container-2 {
+  transition: all 0.3s;
+  background-image: linear-gradient(to right top, #f45050 50%, #f9d949);
+  height: 40vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+body main section .container .row .column-left section .profile .photo {
+  text-align: center;
+}
+body main section .container .row .column-left section .profile .photo .img {
+  transition: all 0.3s;
+  background-color: #f0f0f0;
+  display: inline-block;
+  border-radius: 100%;
+  padding: 8%;
+  margin-top: 3vh;
+}
+body main section .container .row .column-left section .profile .photo .img img {
+  transition: all 0.3s;
+  width: 10vh;
+  height: 10vh;
+}
+body main section .container .row .column-left section .profile .name .container-3 .text {
+  margin-top: 5vh;
+}
+body main section .container .row .column-left section .profile .name .container-3 .text .hello {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  color: #f0f0f0;
+}
+body main section .container .row .column-left section .profile .name .container-3 .text .fname {
+  margin-top: 1vh;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  color: #f0f0f0;
+  font-size: 40px;
+  font-weight: bold;
+}
+body main section .container .row .column-left.active {
+  transition: all 0.3s;
+  width: 90px;
+}
+body main section .container .row .column-left.active section {
+  transition: all 0.3s;
+  background-color: #3c486b;
+}
+body main section .container .row .column-left.active section .profile .container-2 {
+  transition: all 0.3s;
+  background-image: none;
+  background-color: #3c486b;
+}
+body main section .container .row .column-left.active section .profile .container-2 .photo .img {
+  transition: all 0.3s;
+  background-color: #f0f0f0;
+  display: inline-block;
+  border-radius: 100%;
+  margin-top: 7vh;
+}
+body main section .container .row .column-left.active section .profile .container-2 .photo .img img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s;
+}
+body main section .container .row .column-left.active section .profile .container-2 .name .container-3 .text {
+  margin-top: 5vh;
+}
+body main section .container .row .column-left.active section .profile .container-2 .name .container-3 .text .hello {
+  display: none;
+}
+body main section .container .row .column-left.active section .profile .container-2 .name .container-3 .text .fname {
+  display: none;
+}
+body main section .container .column-middle {
+  transition: all 0.3s;
+  float: left;
+  width: 40%;
+  height: calc(100vh - 40px);
+}
+body main section .container .column-middle section {
+  background-color: #f0f0f0;
+  margin: 20px;
+  margin-right: 0px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+body main section .container .column-middle.active {
+  transition: all 0.3s;
+  float: left;
+  width: calc((100% - 180px) / 2);
+  height: calc(100vh - 40px);
+}
+body main section .container .column-middle.active section {
+  background-color: #f0f0f0;
+  margin: 20px;
+  margin-right: 0px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+body main section .container .column-right {
+  transition: all 0.3s;
+  float: left;
+  width: 40%;
+  height: calc(100vh - 40px);
+}
+body main section .container .column-right section {
+  background-color: #f0f0f0;
+  margin: 20px;
+  min-height: 100%;
+  border-radius: 20px;
+}
+body main section .container .column-right.active {
+  transition: all 0.3s;
+  float: left;
+  width: calc((100% - 180px) / 2);
+  height: calc(100vh - 40px);
+}
+body main section .container .column-right.active section {
+  background-color: #f0f0f0;
+  margin: 20px;
+  min-height: 100%;
+  border-radius: 20px;
+}/*# sourceMappingURL=dashboard-style.css.map */
