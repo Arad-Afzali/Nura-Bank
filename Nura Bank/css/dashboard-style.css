@@ -157,13 +157,17 @@ body main section .container .row .column-left section {
 }
 body main section .container .row .column-left section .profile .container-2 {
   transition: all 0.3s;
-  background-color: #409fad;
-  height: 25vh;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom: 30vh solid;
-  -o-border-image: linear-gradient(to top, #f0f0f0 2%, #409fad 9%) 10%;
-     border-image: linear-gradient(to top, #f0f0f0 2%, #409fad 9%) 10%;
+  background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 40%);
+  height: 50vh;
+}
+body main section .container .row .column-left section .profile .container-2 .bank-name p {
+  text-align: center;
+  padding-top: 15px;
+}
+body main section .container .row .column-left section .profile .container-2 .bank-name p span {
+  font-family: "Courgette", cursive;
+  font-size: 40px;
+  color: #f0f0f0;
 }
 body main section .container .row .column-left section .profile .photo {
   text-align: center;
@@ -171,7 +175,7 @@ body main section .container .row .column-left section .profile .photo {
 body main section .container .row .column-left section .profile .photo .img {
   transition: all 0.3s;
   display: inline-block;
-  margin-top: 3vh;
+  margin-top: 5vh;
 }
 body main section .container .row .column-left section .profile .photo .img img {
   transition: all 0.3s;
@@ -194,6 +198,7 @@ body main section .container .row .column-left section .profile .name .container
   color: #f0f0f0;
   font-size: 40px;
   font-weight: bold;
+  -webkit-text-stroke: 1px #3c486b;
 }
 body main section .container .row .column-left section .balance-container .balance-text p {
   text-align: center;
@@ -210,6 +215,17 @@ body main section .container .row .column-left section .balance-container .balan
   font-size: 50px;
   font-weight: bold;
 }
+body main section .container .row .column-left section .account-info .info-text {
+  margin-top: 15vh;
+}
+body main section .container .row .column-left section .account-info .info-text p {
+  text-align: center;
+}
+body main section .container .row .column-left section .account-info .info-text p span {
+  color: #3c486b;
+  font-family: "Noto Serif", serif;
+  font-size: 15px;
+}
 body main section .container .row .column-left.active {
   transition: all 0.3s;
   width: 90px;
@@ -220,12 +236,10 @@ body main section .container .row .column-left.active section {
 }
 body main section .container .row .column-left.active section .profile .container-2 {
   background-image: none;
-  background-color: #3c486b;
-  -o-border-image: none;
-     border-image: none;
-  border: none;
-  border-bottom: #3c486b;
   transition: all 0.3s;
+}
+body main section .container .row .column-left.active section .profile .container-2 .bank-name {
+  display: none;
 }
 body main section .container .row .column-left.active section .profile .container-2 .photo .img {
   transition: all 0.3s;
@@ -247,6 +261,9 @@ body main section .container .row .column-left.active section .profile .containe
 body main section .container .row .column-left.active section .balance-container {
   display: none;
 }
+body main section .container .row .column-left.active section .account-info {
+  display: none;
+}
 body main section .container .column-middle {
   transition: all 0.3s;
   float: left;
@@ -259,6 +276,53 @@ body main section .container .column-middle section {
   margin-right: 0px;
   min-height: 100%;
   border-radius: 20px;
+  overflow: hidden;
+}
+body main section .container .column-middle section .transaction .trans-container .title {
+  text-align: center;
+  background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 95%);
+  height: 15vh;
+}
+body main section .container .column-middle section .transaction .trans-container .title p {
+  padding-top: 2vh;
+}
+body main section .container .column-middle section .transaction .trans-container .title p span {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  color: #f0f0f0;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #3c486b;
+  padding: 2vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info {
+  height: 80vh;
+  overflow: scroll;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .history {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .history .element p {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  margin: 5px;
+  color: #3c486b;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .history .element p .flash {
+  float: right;
+  margin-right: 5px;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .history .element p .flash img {
+  height: 20px;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .history .element p .money {
+  float: right;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info::-webkit-scrollbar {
+  display: none;
 }
 body main section .container .column-middle.active {
   transition: all 0.3s;

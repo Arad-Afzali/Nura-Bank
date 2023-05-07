@@ -158,7 +158,6 @@ body {
 
             section {
               transition: all 0.3s;
-
               background-color: $lightest;
               margin: 20px;
               margin-right: 0px;
@@ -168,23 +167,27 @@ body {
               .profile {
                 .container-2 {
                   transition: all 0.3s;
-                  background-color: $lightblue;
-                  height: 25vh;
-                  border-bottom-left-radius: 20px;
-                  border-bottom-right-radius: 20px;
-                  border-bottom: 30vh solid;
-                  border-image: linear-gradient(to top, #f0f0f0 2%, #409fad 9%)
-                    10%;
+                  background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 40%);
+                  height: 50vh;
+
+                  .bank-name{
+                    p{
+                      text-align: center;
+                      padding-top: 15px;
+                      span{
+                        font-family: $brand-font;
+                        font-size: 40px;
+                        color: $lightest;
+                      }
+                    }
+                  }
                 }
                 .photo {
                   text-align: center;
                   .img {
                     transition: all 0.3s;
-
-                    // background-color: #f0f0f0;
                     display: inline-block;
-                    // padding: 8%;
-                    margin-top: 3vh;
+                    margin-top: 5vh;
                     img {
                       transition: all 0.3s;
 
@@ -202,6 +205,7 @@ body {
                         text-align: center;
                         font-family: $page-font;
                         color: $lightest;
+
                       }
                       .fname {
                         margin-top: 1vh;
@@ -210,6 +214,7 @@ body {
                         color: $lightest;
                         font-size: 40px;
                         font-weight: bold;
+                        -webkit-text-stroke: 1px $dark;
                       }
                     }
                   }
@@ -238,6 +243,20 @@ body {
                   }
                 }
               }
+
+              .account-info{
+                .info-text{
+                  margin-top: 15vh;
+                  p{
+                    text-align: center;
+                    span{
+                      color: $dark;
+                      font-family: $page-font;
+                      font-size: 15px;
+                    }
+                  }
+                }
+              }
             }
           }
 
@@ -252,11 +271,10 @@ body {
               .profile {
                 .container-2 {
                   background-image: none;
-                  background-color: $dark;
-                  border-image: none;
-                  border: none;
-                  border-bottom: $dark;
                   transition: all 0.3s;
+                  .bank-name{
+                    display: none;
+                  }
 
                   .photo {
                     .img {
@@ -289,9 +307,14 @@ body {
               .balance-container {
                 display: none;
               }
+              .account-info{
+                display: none;
+              }
             }
           }
         }
+
+        // left active finish-----------------------------------------
         .column-middle {
           transition: all 0.3s;
 
@@ -305,8 +328,82 @@ body {
             margin-right: 0px;
             min-height: 100%;
             border-radius: 20px;
+            overflow: hidden;
+
+
+            .transaction{
+
+              .trans-container{
+
+                .title{
+                  text-align: center;
+                  background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 95%);
+                  height: 15vh;
+
+
+                  p{
+                    padding-top: 2vh;
+
+                    span{
+                      text-align: center;
+                      font-family: $page-font;
+                      color: $lightest;
+                      font-size: 30px;
+                      font-weight: bold;
+                      background-color: $dark;
+                      padding: 2vh;
+                      border-bottom-left-radius: 20px;
+                      border-bottom-right-radius: 20px;
+                      // border-top-right-radius: -20px ;
+
+                    }
+                  }
+                }
+                .trans-info{
+                  height: 80vh;
+                  overflow: scroll;
+                  // -ms-overflow-style: none; /* IE and Edge */
+                  .history{
+                    padding-right: 25px;
+                    padding-left: 25px;
+                    .element{
+                      p{
+                        font-family: $page-font;
+                        font-size: 20px;
+                        margin: 5px;
+                        color: $dark;
+                        .reason{
+
+                        }
+                        .flash{
+                          float: right;
+                          margin-right: 5px;
+                          img{
+                            height: 20px;
+                          }
+
+                        }
+                        .date{
+
+                        }
+                        .money{
+                          float: right;
+
+                        }
+                      }
+                    }
+                  }
+
+                }
+                .trans-info::-webkit-scrollbar{
+                  display: none;
+                }
+              }
+            }
           }
         }
+
+        // middle active--------------------------------
         .column-middle.active {
           transition: all 0.3s;
 
