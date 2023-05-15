@@ -160,15 +160,6 @@ body main section .container .row .column-left section .profile .container-2 {
   background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 40%);
   height: 50vh;
 }
-body main section .container .row .column-left section .profile .container-2 .bank-name p {
-  text-align: center;
-  padding-top: 15px;
-}
-body main section .container .row .column-left section .profile .container-2 .bank-name p span {
-  font-family: "Courgette", cursive;
-  font-size: 40px;
-  color: #f0f0f0;
-}
 body main section .container .row .column-left section .profile .photo {
   text-align: center;
 }
@@ -200,9 +191,12 @@ body main section .container .row .column-left section .profile .name .container
   font-weight: bold;
   -webkit-text-stroke: 1px #3c486b;
 }
+body main section .container .row .column-left section .balance-container {
+  transition: all 0.3s;
+}
 body main section .container .row .column-left section .balance-container .balance-text p {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 body main section .container .row .column-left section .balance-container .balance-text p span {
   color: #3c486b;
@@ -216,7 +210,8 @@ body main section .container .row .column-left section .balance-container .balan
   font-weight: bold;
 }
 body main section .container .row .column-left section .account-info .info-text {
-  margin-top: 15vh;
+  transition: all 0.3s;
+  margin-top: 10vh;
 }
 body main section .container .row .column-left section .account-info .info-text p {
   text-align: center;
@@ -238,9 +233,6 @@ body main section .container .row .column-left.active section .profile .containe
   background-image: none;
   transition: all 0.3s;
 }
-body main section .container .row .column-left.active section .profile .container-2 .bank-name {
-  display: none;
-}
 body main section .container .row .column-left.active section .profile .container-2 .photo .img {
   transition: all 0.3s;
   display: inline-block;
@@ -259,9 +251,11 @@ body main section .container .row .column-left.active section .profile .containe
   display: none;
 }
 body main section .container .row .column-left.active section .balance-container {
+  transition: all 0.3s;
   display: none;
 }
 body main section .container .row .column-left.active section .account-info {
+  transition: all 0.3s;
   display: none;
 }
 body main section .container .column-middle {
@@ -348,6 +342,82 @@ body main section .container .column-right section {
   margin: 20px;
   min-height: 100%;
   border-radius: 20px;
+  overflow: hidden;
+}
+body main section .container .column-right section .card .card-container .title {
+  text-align: center;
+  background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 95%);
+  height: 15vh;
+}
+body main section .container .column-right section .card .card-container .title p {
+  padding-top: 2vh;
+}
+body main section .container .column-right section .card .card-container .title p span {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  color: #f0f0f0;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #3c486b;
+  padding: 2vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+body main section .container .column-right section .card .card-container .card-visual {
+  position: relative;
+  text-align: center;
+  margin-top: 17vh;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic {
+  background-image: linear-gradient(to right top, #3c486b 20%, #f45050 80%, #f9d949);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 485px;
+  height: 306px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 15px 0 rgba(0, 0, 0, 0.7); /* add a light gray shadow */
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .card-brand p {
+  margin-top: 35px;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .card-brand p span {
+  font-family: "Courgette", cursive;
+  color: #f0f0f0;
+  font-size: 40px;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .chip img {
+  width: 85px;
+  margin-left: -340px;
+  margin-top: 28px;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .name p {
+  margin-top: -40px;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .name p span {
+  font-family: "Noto Serif", serif;
+  color: #f0f0f0;
+  font-size: 20px;
+  font-weight: bold;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .card-num p {
+  margin-top: 40px;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .card-num p span {
+  font-family: "Noto Serif", serif;
+  color: #f0f0f0;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .card-exp-cvv p {
+  margin: 20px;
+  margin-top: 55px;
+}
+body main section .container .column-right section .card .card-container .card-visual .card-pic .card-exp-cvv p span {
+  color: #f0f0f0;
+  font-family: "Noto Serif", serif;
 }
 body main section .container .column-right.active {
   transition: all 0.3s;
