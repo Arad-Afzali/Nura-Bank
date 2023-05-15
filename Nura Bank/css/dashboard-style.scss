@@ -376,7 +376,6 @@ body {
                 .trans-info {
                   height: 80vh;
                   overflow: scroll;
-                  // -ms-overflow-style: none; /* IE and Edge */
                   .history {
                     padding-right: 25px;
                     padding-left: 25px;
@@ -530,15 +529,77 @@ body {
                         }
                       }
                     }
-                    .card-exp-cvv{
-                      p{
+                    .card-exp-cvv {
+                      p {
                         margin: 20px;
                         margin-top: 55px;
-                        span{
+                        span {
                           color: $lightest;
                           font-family: $page-font;
                         }
+                      }
+                    }
+                  }
+                }
+                .tools-container {
+                  margin-top: 35vh;
+                  .tools-row {
+                    padding: 5%;
+                    .tools-column {
+                      float: left;
+                      width: 50%;
+                      .option {
+                        background-color: #dfdfdfa1;
+                        height: 60px;
+                        margin: 25px;
+                        border-radius: 20px;
+                        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.6); /* add a light gray shadow */
+                        cursor: pointer;
+                        transition: all 0.3s;
 
+                        &:hover {
+                          box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
+                          transition: all 0.3s;
+                        }
+
+                        .container {
+                          vertical-align: middle;
+                          line-height: 60px;
+                          .logo {
+                            float: left;
+                            width: 20%;
+                            background-color: $dark;
+                            height: 50px;
+                            margin: 5px;
+                            border-radius: 15px;
+                            // margin-left:10px ;
+                            // margin-top: 10px;
+                            text-align: center;
+                            line-height: 47px;
+
+                            img {
+                              height: 40px;
+                              text-align: center;
+                              vertical-align: middle;
+                              // position: absolute;
+                              // margin-top: 5px;
+                              // margin-left: 5px;
+                            }
+                          }
+                          .text {
+                            float: left;
+                            width: 70%;
+                            p {
+                              text-align: center;
+                              color: $dark;
+                              font-family: $page-font;
+                              vertical-align: middle;
+                              margin-left: -15%;
+                              font-size: 16px;
+                              font-weight: bold;
+                            }
+                          }
+                        }
                       }
                     }
                   }
