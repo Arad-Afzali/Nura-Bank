@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/dashboard-style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./files/pics/logo.png"
+    />
+    <!-- <script src="./js/dashboard-js.js"></script> -->
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="ham-menu">
+            <img
+              src="./files/pics/hamburgur.svg"
+              id="btn"
+              alt=""
+              onclick="myFunction()"
+            />
+          </div>
+          <div class="home-button">
+            <img
+              src="./files/pics/home.svg"
+              id="btn"
+              alt=""
+              onclick="window.location.href='dashboard.html'"
+            />
+          </div>
+          <div class="row">
+            <div class="column-left" id="column-left">
+              <section>
+                <div class="profile">
+                  <div class="container-2">
+                    <!-- <div class="bank-name">
+                      <p><span>Nura Bank</span></p>
+                    </div> -->
+                    <div class="photo">
+                      <div class="img">
+                        <img src="./files/pics/Arad.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="name">
+                      <div class="container-3">
+                        <div class="text">
+                          <p class="hello"><span>Welcome back,</span></p>
+                          <p class="fname"><span>Arad Afzali</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="balance-container">
+                  <div class="balance-text">
+                    <p><span>Your balance is:</span></p>
+                    <p>
+                      <span class="money"
+                        >4932
+                        <span style="color: green; font-size: 50px"
+                          >$</span
+                        ></span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="account-info">
+                  <div class="info-text">
+                    <p style="margin-bottom: 10px">
+                      <span style="font-size: 20px">Account Information</span>
+                    </p>
+                    <p><span>ID: Arad_Afzali</span></p>
+                    <p><span>Email: Arad.h.a.afzali@gmail.com</span></p>
+                    <p><span>Phone Number: 09997775533</span></p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="column-middle">
+              <section>
+                <div class="transaction">
+                  <div class="trans-container">
+                    <div class="title">
+                      <p><span>Transfer Money</span></p>
+                    </div>
+                    <div class="trans-info">
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="column-right">
+              <section>
+                <div class="card">
+                  <div class="card-container">
+                    <div class="title">
+                      <p><span>Card & Tools</span></p>
+                    </div>
+                    <div class="card-visual">
+                      <div class="card-pic">
+                        <div class="card-brand">
+                          <p><span>Nura Bank</span></p>
+                        </div>
+                        <div class="chip">
+                          <img src="../Nura Bank/files/pics/chip.png" alt="" />
+                        </div>
+                        <div class="name">
+                          <p><span>Arad Afzali</span></p>
+                        </div>
+                        <div class="card-num" id="card-number">
+                          <p>
+                            <span>9988 </span><span> 7766 </span
+                            ><span> 5544 </span><span> 3322</span>
+                          </p>
+                        </div>
+                        <div class="card-exp-cvv">
+                          <p>
+                            <span style="float: left">exp: 2024/07</span
+                            ><span style="float: right">cvv2: 999</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tools-container">
+                      <div class="tools-row">
+                        <div class="tools-column">
+                          <div class="option" style="box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
+                          transition: all 0.3s; background-color: #f4505083;">
+                            <div class="container">
+                              <div class="logo">
+                                <img
+                                  src="../Nura Bank/files/pics/transfer.svg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="text"><p>Transfer</p></div>
+                            </div>
+                          </div>
+                          <div class="option">
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/bill.svg" alt="">
+                              </div>
+                              <div class="text"><p>Bill</p></div>
+                            </div>
+                          </div>
+                          <div class="option">
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/simcard.svg" alt="">
+                              </div>
+                              <div class="text"><p>Charge Sim</p></div>
+                            </div>
+                          </div>
+                          <div class="option" id="support-bot" onclick="openPage('https://t.me/nurabank_bot')">
+                            <script>function openPage(pageUrl) { window.open(pageUrl); } </script>
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/bot.svg" alt="">
+                              </div>
+                              <div class="text"><p>Support Bot</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tools-column">
+                          <div class="option" id="copy-card">
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/copy.svg" alt="">
+                              </div>
+                              <div class="text"><p>Copy Card Number</p></div>
+                            </div>
+                          </div>
+
+                          <div class="option">
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/password.svg" alt="">
+                              </div>
+                              <div class="text"><p>Online Password</p></div>
+                            </div>
+                          </div>
+                          <div class="option">
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/disable.svg" alt="">
+                              </div>
+                              <div class="text"><p>Disable Account</p></div>
+                            </div>
+                          </div>
+                          <div class="option">
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/more.svg" alt="">
+                              </div>
+                              <div class="text"><p>More</p></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/dashboard-js.js" defer></script>
+  </body>
+</html>

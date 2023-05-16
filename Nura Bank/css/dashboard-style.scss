@@ -134,14 +134,41 @@ $lightblue: #409fad;
 $brand-font: "Courgette", cursive;
 $page-font: "Noto Serif", serif;
 
+@keyframes fade-in {
+  from {
+    // background-color: $dark;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   .ham-menu {
     // line-height: 0;
     #btn {
       width: 25px;
       position: absolute;
-      margin-left: 42px;
-      margin-top: 40px;
+      left: 42px;
+      top: 40px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .home-button {
+    // line-height: 0;
+    #btn {
+      width: 25px;
+      position: absolute;
+      right: 42px;
+      top: 40px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   main {
@@ -331,6 +358,8 @@ body {
 
         // middle start --------------------------------------------
         .column-middle {
+          animation: fade-in 0.5s ease-in;
+
           transition: all 0.3s;
 
           float: left;
@@ -357,9 +386,11 @@ body {
                   height: 15vh;
 
                   p {
-                    padding-top: 2vh;
+                    // padding-top: 2vh;
 
                     span {
+                      display: inline-block;
+                      width: 35%;
                       text-align: center;
                       font-family: $page-font;
                       color: $lightest;
@@ -385,8 +416,7 @@ body {
                         font-size: 20px;
                         margin: 5px;
                         color: $dark;
-                        .reason {
-                        }
+
                         .flash {
                           float: right;
                           margin-right: 5px;
@@ -454,9 +484,11 @@ body {
                   height: 15vh;
 
                   p {
-                    padding-top: 2vh;
+                    // padding-top: 2vh;
 
                     span {
+                      display: inline-block;
+                      width: 35%;
                       text-align: center;
                       font-family: $page-font;
                       color: $lightest;
@@ -544,7 +576,9 @@ body {
                 .tools-container {
                   margin-top: 35vh;
                   .tools-row {
-                    padding: 5%;
+                    padding-top: 3vh;
+                    padding-left: 5%;
+                    padding-right: 5%;
                     .tools-column {
                       float: left;
                       width: 50%;
@@ -572,8 +606,6 @@ body {
                             height: 50px;
                             margin: 5px;
                             border-radius: 15px;
-                            // margin-left:10px ;
-                            // margin-top: 10px;
                             text-align: center;
                             line-height: 47px;
 
@@ -581,9 +613,6 @@ body {
                               height: 40px;
                               text-align: center;
                               vertical-align: middle;
-                              // position: absolute;
-                              // margin-top: 5px;
-                              // margin-left: 5px;
                             }
                           }
                           .text {

@@ -11,4 +11,12 @@ function myFunction () {
 
 
 
+const optionElement = document.querySelector('#copy-card');
+
+optionElement.addEventListener('click', () => {
+  const text = document.querySelector('#card-number').textContent;
+  navigator.clipboard.writeText(text);
+
+  alert('Copied to clipboard!');
+});
 

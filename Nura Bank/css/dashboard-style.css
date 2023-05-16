@@ -130,11 +130,31 @@ table {
   border-spacing: 0;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body .ham-menu #btn {
   width: 25px;
   position: absolute;
-  margin-left: 42px;
-  margin-top: 40px;
+  left: 42px;
+  top: 40px;
+}
+body .ham-menu #btn:hover {
+  cursor: pointer;
+}
+body .home-button #btn {
+  width: 25px;
+  position: absolute;
+  right: 42px;
+  top: 40px;
+}
+body .home-button #btn:hover {
+  cursor: pointer;
 }
 body main {
   height: 100vh;
@@ -259,6 +279,7 @@ body main section .container .row .column-left.active section .account-info {
   display: none;
 }
 body main section .container .column-middle {
+  animation: fade-in 0.5s ease-in;
   transition: all 0.3s;
   float: left;
   width: 40%;
@@ -277,10 +298,9 @@ body main section .container .column-middle section .transaction .trans-containe
   background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 95%);
   height: 15vh;
 }
-body main section .container .column-middle section .transaction .trans-container .title p {
-  padding-top: 2vh;
-}
 body main section .container .column-middle section .transaction .trans-container .title p span {
+  display: inline-block;
+  width: 35%;
   text-align: center;
   font-family: "Noto Serif", serif;
   color: #f0f0f0;
@@ -349,10 +369,9 @@ body main section .container .column-right section .card .card-container .title 
   background-image: linear-gradient(to top, #f0f0f0 1%, #409fad 95%);
   height: 15vh;
 }
-body main section .container .column-right section .card .card-container .title p {
-  padding-top: 2vh;
-}
 body main section .container .column-right section .card .card-container .title p span {
+  display: inline-block;
+  width: 35%;
   text-align: center;
   font-family: "Noto Serif", serif;
   color: #f0f0f0;
@@ -423,7 +442,9 @@ body main section .container .column-right section .card .card-container .tools-
   margin-top: 35vh;
 }
 body main section .container .column-right section .card .card-container .tools-container .tools-row {
-  padding: 5%;
+  padding-top: 3vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 body main section .container .column-right section .card .card-container .tools-container .tools-row .tools-column {
   float: left;

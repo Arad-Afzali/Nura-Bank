@@ -392,7 +392,7 @@
                         <div class="name">
                           <p><span>Arad Afzali</span></p>
                         </div>
-                        <div class="card-num">
+                        <div class="card-num" id="card-number">
                           <p>
                             <span>9988 </span><span> 7766 </span
                             ><span> 5544 </span><span> 3322</span>
@@ -409,7 +409,9 @@
                     <div class="tools-container">
                       <div class="tools-row">
                         <div class="tools-column">
-                          <div class="option">
+                          <div class="option" onclick="window.location.href='dashboard-transfer.html'">
+                            <script>function openPage(pageUrl) { window.open(pageUrl); } </script>
+
                             <div class="container">
                               <div class="logo">
                                 <img
@@ -417,7 +419,7 @@
                                   alt=""
                                 />
                               </div>
-                              <div class="text"><p>transfer</p></div>
+                              <div class="text"><p>Transfer</p></div>
                             </div>
                           </div>
                           <div class="option">
@@ -436,9 +438,18 @@
                               <div class="text"><p>Charge Sim</p></div>
                             </div>
                           </div>
+                          <div class="option" id="support-bot" onclick="openPage('https://t.me/nurabank_bot')">
+                            <script>function openPage(pageUrl) { window.open(pageUrl); } </script>
+                            <div class="container">
+                              <div class="logo">
+                                <img src="../Nura Bank/files/pics/bot.svg" alt="">
+                              </div>
+                              <div class="text"><p>Support Bot</p></div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tools-column">
-                          <div class="option">
+                          <div class="option" id="copy-card">
                             <div class="container">
                               <div class="logo">
                                 <img src="../Nura Bank/files/pics/copy.svg" alt="">
@@ -446,6 +457,7 @@
                               <div class="text"><p>Copy Card Number</p></div>
                             </div>
                           </div>
+
                           <div class="option">
                             <div class="container">
                               <div class="logo">
