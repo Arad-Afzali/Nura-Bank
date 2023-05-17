@@ -335,6 +335,77 @@ body main section .container .column-middle section .transaction .trans-containe
 body main section .container .column-middle section .transaction .trans-container .trans-info .history .element p .money {
   float: right;
 }
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form .dollor-sign p {
+  text-align: right;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form .dollor-sign p span {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -40px;
+  font-family: "Noto Serif", serif;
+  color: green;
+  font-size: 30px;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form .bill-detail {
+  margin-top: 50px;
+  text-align: center;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form .bill-detail p span {
+  font-family: "Noto Serif", serif;
+  color: #3c486b;
+  font-size: 20px;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form .bill-detail .bill-name-amount {
+  background-color: #d1d1d1;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #3c486b;
+  border-radius: 20px;
+  display: inline-block;
+  width: 50%;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form label {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  color: #3c486b;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form input {
+  border: 2px solid #3c486b;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: #3c486b;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form button {
+  margin-top: 70px;
+  border: none;
+  background-color: #f45050;
+  border-radius: 35px;
+  color: #f0f0f0;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body main section .container .column-middle section .transaction .trans-container .trans-info .container form button:hover {
+  background-color: #f9d949;
+  transition: all 0.4s;
+}
 body main section .container .column-middle section .transaction .trans-container .trans-info::-webkit-scrollbar {
   display: none;
 }

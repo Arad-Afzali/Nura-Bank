@@ -228,6 +228,7 @@ body main section .container .create form .button button {
   color: #f0f0f0;
   font-family: "Noto Serif", serif;
   font-size: 20px;
+  font-weight: bold;
   padding: 15px;
   transition: all 0.4s;
   cursor: pointer;

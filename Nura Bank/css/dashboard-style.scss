@@ -432,6 +432,89 @@ body {
                       }
                     }
                   }
+
+                  .container {
+                    form {
+                      display: flex;
+                      flex-direction: column;
+                      margin-left: 10%;
+                      margin-right: 10%;
+
+                      .dollor-sign {
+                        p {
+                          text-align: right;
+                          // position: absolute;
+                          span {
+                            position: absolute;
+                            margin-top: -40px;
+                            margin-left: -40px;
+                            font-family: $page-font;
+                            color: green;
+                            font-size: 30px;
+                          }
+                        }
+                      }
+
+                      .bill-detail {
+                        margin-top: 50px;
+                        text-align: center;
+                        p {
+                          span {
+                            font-family: $page-font;
+                            color: $dark;
+                            font-size: 20px;
+                          }
+                        }
+                        .bill-name-amount {
+                          background-color: #d1d1d1;
+                          margin-top: 20px;
+                          padding: 20px;
+                          border: 2px solid $dark;
+                          border-radius: 20px;
+                          display: inline-block;
+                          width: 50%;
+                        }
+                      }
+
+                      label {
+                        font-family: $page-font;
+                        font-size: 20px;
+                        color: $dark;
+
+                        text-align: center;
+                        padding: 20px;
+                        margin-top: 30px;
+                      }
+                      input {
+                        border: 2px solid $dark;
+                        border-radius: 20px;
+                        background-color: $lightest;
+                        font-family: $page-font;
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 10px;
+                        text-align: center;
+                        color: $dark;
+                      }
+                      button {
+                        margin-top: 70px;
+                        border: none;
+                        background-color: $middle;
+                        border-radius: 35px;
+                        color: $lightest;
+                        font-family: $page-font;
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 15px;
+                        transition: all 0.4s;
+                        cursor: pointer;
+                        &:hover {
+                          background-color: $light;
+                          transition: all 0.4s;
+                        }
+                      }
+                    }
+                  }
                 }
                 .trans-info::-webkit-scrollbar {
                   display: none;

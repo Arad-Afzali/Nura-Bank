@@ -87,22 +87,28 @@
                 <div class="transaction">
                   <div class="trans-container">
                     <div class="title">
-                      <p><span>Transfer Money</span></p>
+                      <p><span>Pay Bill</span></p>
                     </div>
                     <div class="trans-info">
                       <div class="container">
                         <form>
-                          <label for="amount">Transfer amount</label>
-                          <input type="number" id="money" name="money" required />
-                          <div class="dollor-sign">
-                          <p><span>$</span></p>
+                          <label for="bill">Bill Number</label>
+                          <input type="number" id="bill" name="bill" required />
+                          <div class="bill-detail">
+                            <p><span>Your Bill's details are:</span></p>
+                            <div class="bill-name-amount">
+                              <p>
+                                <span>Bill for: </span>
+                                <span id="bill-name"> Electricity</span> <br>
+                                <span>Bill amount:</span>
+                                <span id="bill-amount">70$</span>
+                              </p>
+                            </div>
                           </div>
-                          <label for="card-num">Enter the card number</label>
-                          <input type="number" id="card-num" name="card-num" placeholder="xxxx-xxxx-xxxx-xxxx" required />
-                          <button type="submit">Transfer</button>
+
+                          <button type="submit">Accept and Pay</button>
                         </form>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -143,8 +149,10 @@
                     <div class="tools-container">
                       <div class="tools-row">
                         <div class="tools-column">
-                          <div class="option" style="box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
-                          transition: all 0.3s; background-color: #f4505083;">
+                          <div
+                            class="option"
+                            onclick="window.location.href='dashboard-transfer.html'"
+                          >
                             <div class="container">
                               <div class="logo">
                                 <img
@@ -155,10 +163,20 @@
                               <div class="text"><p>Transfer</p></div>
                             </div>
                           </div>
-                          <div class="option" onclick="window.location.href='dashboard-bill.html'">
+                          <div
+                            class="option"
+                            style="
+                              box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
+                              transition: all 0.3s;
+                              background-color: #f4505083;
+                            "
+                          >
                             <div class="container">
                               <div class="logo">
-                                <img src="../Nura Bank/files/pics/bill.svg" alt="">
+                                <img
+                                  src="../Nura Bank/files/pics/bill.svg"
+                                  alt=""
+                                />
                               </div>
                               <div class="text"><p>Bill</p></div>
                             </div>
@@ -166,16 +184,30 @@
                           <div class="option" onclick="window.location.href='dashboard-chargesim.html'">
                             <div class="container">
                               <div class="logo">
-                                <img src="../Nura Bank/files/pics/simcard.svg" alt="">
+                                <img
+                                  src="../Nura Bank/files/pics/simcard.svg"
+                                  alt=""
+                                />
                               </div>
                               <div class="text"><p>Charge Sim</p></div>
                             </div>
                           </div>
-                          <div class="option" id="support-bot" onclick="openPage('https://t.me/nurabank_bot')">
-                            <script>function openPage(pageUrl) { window.open(pageUrl); } </script>
+                          <div
+                            class="option"
+                            id="support-bot"
+                            onclick="openPage('https://t.me/nurabank_bot')"
+                          >
+                            <script>
+                              function openPage(pageUrl) {
+                                window.open(pageUrl);
+                              }
+                            </script>
                             <div class="container">
                               <div class="logo">
-                                <img src="../Nura Bank/files/pics/bot.svg" alt="">
+                                <img
+                                  src="../Nura Bank/files/pics/bot.svg"
+                                  alt=""
+                                />
                               </div>
                               <div class="text"><p>Support Bot</p></div>
                             </div>
@@ -185,7 +217,10 @@
                           <div class="option" id="copy-card">
                             <div class="container">
                               <div class="logo">
-                                <img src="../Nura Bank/files/pics/copy.svg" alt="">
+                                <img
+                                  src="../Nura Bank/files/pics/copy.svg"
+                                  alt=""
+                                />
                               </div>
                               <div class="text"><p>Copy Card Number</p></div>
                             </div>
@@ -194,7 +229,10 @@
                           <div class="option">
                             <div class="container">
                               <div class="logo">
-                                <img src="../Nura Bank/files/pics/password.svg" alt="">
+                                <img
+                                  src="../Nura Bank/files/pics/password.svg"
+                                  alt=""
+                                />
                               </div>
                               <div class="text"><p>Online Password</p></div>
                             </div>
@@ -202,7 +240,10 @@
                           <div class="option">
                             <div class="container">
                               <div class="logo">
-                                <img src="../Nura Bank/files/pics/disable.svg" alt="">
+                                <img
+                                  src="../Nura Bank/files/pics/disable.svg"
+                                  alt=""
+                                />
                               </div>
                               <div class="text"><p>Disable Account</p></div>
                             </div>
@@ -210,7 +251,10 @@
                           <div class="option">
                             <div class="container">
                               <div class="logo">
-                                <img src="../Nura Bank/files/pics/more.svg" alt="">
+                                <img
+                                  src="../Nura Bank/files/pics/more.svg"
+                                  alt=""
+                                />
                               </div>
                               <div class="text"><p>More</p></div>
                             </div>

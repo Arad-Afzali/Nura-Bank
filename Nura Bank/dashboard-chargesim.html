@@ -87,19 +87,19 @@
                 <div class="transaction">
                   <div class="trans-container">
                     <div class="title">
-                      <p><span>Transfer Money</span></p>
+                      <p><span>Charge SimCard</span></p>
                     </div>
                     <div class="trans-info">
                       <div class="container">
                         <form>
-                          <label for="amount">Transfer amount</label>
-                          <input type="number" id="money" name="money" required />
+                          <label for="amount">Charge amount</label>
+                          <input type="number" id="charge" name="charge" required />
                           <div class="dollor-sign">
                           <p><span>$</span></p>
                           </div>
-                          <label for="card-num">Enter the card number</label>
-                          <input type="number" id="card-num" name="card-num" placeholder="xxxx-xxxx-xxxx-xxxx" required />
-                          <button type="submit">Transfer</button>
+                          <label for="Phone-num">Phone Number</label>
+                          <input type="number" id="Phone-num" name="Phone-num" placeholder="0999-888-7766" required />
+                          <button type="submit">Charge</button>
                         </form>
                       </div>
 
@@ -143,8 +143,7 @@
                     <div class="tools-container">
                       <div class="tools-row">
                         <div class="tools-column">
-                          <div class="option" style="box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
-                          transition: all 0.3s; background-color: #f4505083;">
+                          <div class="option" onclick="window.location.href='dashboard-transfer.html'">
                             <div class="container">
                               <div class="logo">
                                 <img
@@ -163,7 +162,8 @@
                               <div class="text"><p>Bill</p></div>
                             </div>
                           </div>
-                          <div class="option" onclick="window.location.href='dashboard-chargesim.html'">
+                          <div class="option" style="box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
+                          transition: all 0.3s; background-color: #f4505083;">
                             <div class="container">
                               <div class="logo">
                                 <img src="../Nura Bank/files/pics/simcard.svg" alt="">
