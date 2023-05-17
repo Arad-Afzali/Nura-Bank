@@ -424,8 +424,7 @@ body {
                             height: 20px;
                           }
                         }
-                        .date {
-                        }
+
                         .money {
                           float: right;
                         }
@@ -434,6 +433,55 @@ body {
                   }
 
                   .container {
+                    .warning {
+                      margin-left: 10%;
+                      margin-right: 10%;
+                      p {
+                        margin: 20px;
+                        margin-top: 50px;
+                        line-height: 25px;
+                        text-align: center;
+                        span {
+                          font-family: $page-font;
+                          font-size: 20px;
+                        }
+                      }
+                      #status {
+                        background-color: #d1d1d1;
+                        margin-top: 40px;
+                        margin-right: 20%;
+                        margin-left: 20%;
+
+                        padding: 20px;
+                        border: 3px solid green;
+                        border-radius: 20px;
+                        // display: block;
+                        // width: 50%;
+                      }
+                    }
+
+                    .activation-button {
+                      display: flex;
+                      flex-direction: column;
+                      margin-left: 10%;
+                      margin-right: 10%;
+                      .activation {
+                        margin-top: 40px;
+                        border: none;
+                        border-radius: 35px;
+                        color: $lightest;
+                        font-family: $page-font;
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 15px;
+                        transition: all 0.4s;
+                        background-color: #f45050;
+                        cursor: pointer;
+
+                      }
+
+                    }
+
                     form {
                       display: flex;
                       flex-direction: column;

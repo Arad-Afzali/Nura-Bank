@@ -20,3 +20,25 @@ optionElement.addEventListener('click', () => {
   alert('Copied to clipboard!');
 });
 
+
+function toggledeactive() {
+  var button = document.getElementById("active-deactive-button");
+  var activespan = document.getElementById("activespan");
+  var status = document.getElementById("status");
+  if (button.classList.contains("active")) {
+    button.classList.remove("active");
+    button.style.backgroundColor = "#f45050";
+    button.innerHTML = "Deactive";
+    activespan.style.color = "green";
+    activespan.innerHTML = "Active";
+    status.style.border = "3px solid green"
+  } else {
+    button.classList.add("active");
+    button.style.backgroundColor = "green";
+    button.innerHTML = "Active";
+    activespan.style.color = "#f45050";
+    activespan.innerHTML = "Deactive";
+    status.style.border = "3px solid red"
+
+  }
+}
