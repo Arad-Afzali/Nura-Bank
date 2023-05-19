@@ -87,34 +87,23 @@
                 <div class="transaction">
                   <div class="trans-container">
                     <div class="title">
-                      <p><span>Disable Account</span></p>
+                      <p><span>Online Password</span></p>
                     </div>
                     <div class="trans-info">
                       <div class="container">
                         <div class="warning">
                           <p>
                             <span
-                              >For security reasons, you have the option to
-                              Disable your card temporarily. During the
-                              period of deactivation, your card will be
-                              unusable.</span
-                            >
-                          </p>
-                          <p id="status">
-                            <span> Current status: </span>
-                            <span id="activespan" style="color: green"
-                              >Active</span
-                            >
+                              >To shop online, you need a single-use online
+                              password. When you press the button, you will
+                              receive the password via SMS.
+                            </span>
                           </p>
                         </div>
-                        <div class="activation-button">
-                          <button
-                            class="activation "
-                            id="active-deactive-button"
-                            onclick="toggledeactive()"
-                          >
-                            Deactive
-                          </button>
+                        <div class="online-password">
+                          <form action="" method="">
+                            <button id="online-pass-button" class="activation">Get Password</button>
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -233,7 +222,14 @@
                             </div>
                           </div>
 
-                          <div class="option" onclick="window.location.href='dashboard-onlinepass.html'">
+                          <div
+                            class="option"
+                            style="
+                              box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
+                              transition: all 0.3s;
+                              background-color: #f4505083;
+                            "
+                          >
                             <div class="container">
                               <div class="logo">
                                 <img
@@ -246,11 +242,7 @@
                           </div>
                           <div
                             class="option"
-                            style="
-                              box-shadow: 0px 1px 15px rgba(0, 0, 0); /* add a light gray shadow */
-                              transition: all 0.3s;
-                              background-color: #f4505083;
-                            "
+                            onclick="window.location.href='dashboard-disable.html'"
                           >
                             <div class="container">
                               <div class="logo">

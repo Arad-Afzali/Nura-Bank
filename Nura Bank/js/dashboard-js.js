@@ -12,13 +12,17 @@ function myFunction () {
 
 
 const optionElement = document.querySelector('#copy-card');
-
 optionElement.addEventListener('click', () => {
   const text = document.querySelector('#card-number').textContent;
   navigator.clipboard.writeText(text);
 
   alert('Copied to clipboard!');
 });
+
+const optionElement2 = document.querySelector('#online-pass-button');
+optionElement2.addEventListener('click',() => {
+  alert('You will receive a text message with your password soon.')
+})
 
 
 function toggledeactive() {

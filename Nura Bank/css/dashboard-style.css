@@ -209,7 +209,6 @@ body main section .container .row .column-left section .profile .name .container
   color: #f0f0f0;
   font-size: 40px;
   font-weight: bold;
-  -webkit-text-stroke: 1px #3c486b;
 }
 body main section .container .row .column-left section .balance-container {
   transition: all 0.3s;
@@ -300,7 +299,7 @@ body main section .container .column-middle section .transaction .trans-containe
 }
 body main section .container .column-middle section .transaction .trans-container .title p span {
   display: inline-block;
-  width: 35%;
+  width: 40%;
   text-align: center;
   font-family: "Noto Serif", serif;
   color: #f0f0f0;
@@ -484,7 +483,7 @@ body main section .container .column-right section .card .card-container .title 
 }
 body main section .container .column-right section .card .card-container .title p span {
   display: inline-block;
-  width: 35%;
+  width: 40%;
   text-align: center;
   font-family: "Noto Serif", serif;
   color: #f0f0f0;

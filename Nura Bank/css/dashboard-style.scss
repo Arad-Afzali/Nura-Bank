@@ -244,7 +244,7 @@ body {
                         color: $lightest;
                         font-size: 40px;
                         font-weight: bold;
-                        -webkit-text-stroke: 1px $dark;
+                        // -webkit-text-stroke: 1px $dark;
                       }
                     }
                   }
@@ -390,7 +390,7 @@ body {
 
                     span {
                       display: inline-block;
-                      width: 35%;
+                      width: 40%;
                       text-align: center;
                       font-family: $page-font;
                       color: $lightest;
@@ -619,7 +619,7 @@ body {
 
                     span {
                       display: inline-block;
-                      width: 35%;
+                      width: 40%;
                       text-align: center;
                       font-family: $page-font;
                       color: $lightest;
