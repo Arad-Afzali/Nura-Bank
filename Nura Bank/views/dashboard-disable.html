@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/dashboard-style.css" />
+    <link rel="stylesheet" href="../resources/css/dashboard-style.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="./files/pics/logo.png"
+      href="../resources/files/pics/logo.png"
     />
     <!-- <script src="./js/dashboard-js.js"></script> -->
     <title>Dashboard</title>
@@ -20,7 +20,7 @@
         <div class="container">
           <div class="ham-menu">
             <img
-              src="./files/pics/hamburgur.svg"
+              src="../resources/files/pics/hamburgur.svg"
               id="btn"
               alt=""
               onclick="myFunction()"
@@ -28,7 +28,7 @@
           </div>
           <div class="home-button">
             <img
-              src="./files/pics/home.svg"
+              src="../resources/files/pics/home.svg"
               id="btn"
               alt=""
               onclick="window.location.href='dashboard.html'"
@@ -44,7 +44,7 @@
                     </div> -->
                     <div class="photo">
                       <div class="img">
-                        <img src="./files/pics/Arad.jpg" alt="" />
+                        <img src="../resources/files/pics/user.png" alt="" />
                       </div>
                     </div>
                     <div class="name">
@@ -87,16 +87,35 @@
                 <div class="transaction">
                   <div class="trans-container">
                     <div class="title">
-                      <p><span>More Options</span></p>
+                      <p><span>Disable Account</span></p>
                     </div>
                     <div class="trans-info">
                       <div class="container">
                         <div class="warning">
                           <p>
-
+                            <span
+                              >For security reasons, you have the option to
+                              Disable your card temporarily. During the
+                              period of deactivation, your card will be
+                              unusable.</span
+                            >
+                          </p>
+                          <p id="status">
+                            <span> Current status: </span>
+                            <span id="activespan" style="color: green"
+                              >Active</span
+                            >
                           </p>
                         </div>
-
+                        <div class="activation-button">
+                          <button
+                            class="activation "
+                            id="active-deactive-button"
+                            onclick="toggledeactive()"
+                          >
+                            Deactive
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -116,7 +135,7 @@
                           <p><span>Nura Bank</span></p>
                         </div>
                         <div class="chip">
-                          <img src="../Nura Bank/files/pics/chip.png" alt="" />
+                          <img src="../resources/files/pics/chip.png" alt="" />
                         </div>
                         <div class="name">
                           <p><span>Arad Afzali</span></p>
@@ -145,7 +164,7 @@
                             <div class="container">
                               <div class="logo">
                                 <img
-                                  src="../Nura Bank/files/pics/transfer.svg"
+                                  src="../resources/files/pics/transfer.svg"
                                   alt=""
                                 />
                               </div>
@@ -159,7 +178,7 @@
                             <div class="container">
                               <div class="logo">
                                 <img
-                                  src="../Nura Bank/files/pics/bill.svg"
+                                  src="../resources/files/pics/bill.svg"
                                   alt=""
                                 />
                               </div>
@@ -173,7 +192,7 @@
                             <div class="container">
                               <div class="logo">
                                 <img
-                                  src="../Nura Bank/files/pics/simcard.svg"
+                                  src="../resources/files/pics/simcard.svg"
                                   alt=""
                                 />
                               </div>
@@ -193,7 +212,7 @@
                             <div class="container">
                               <div class="logo">
                                 <img
-                                  src="../Nura Bank/files/pics/bot.svg"
+                                  src="../resources/files/pics/bot.svg"
                                   alt=""
                                 />
                               </div>
@@ -206,7 +225,7 @@
                             <div class="container">
                               <div class="logo">
                                 <img
-                                  src="../Nura Bank/files/pics/copy.svg"
+                                  src="../resources/files/pics/copy.svg"
                                   alt=""
                                 />
                               </div>
@@ -214,32 +233,15 @@
                             </div>
                           </div>
 
-                          <div
-                            class="option"
-                            onclick="window.location.href='dashboard-onlinepass.html'"
-                          >
+                          <div class="option" onclick="window.location.href='dashboard-onlinepass.html'">
                             <div class="container">
                               <div class="logo">
                                 <img
-                                  src="../Nura Bank/files/pics/password.svg"
+                                  src="../resources/files/pics/password.svg"
                                   alt=""
                                 />
                               </div>
                               <div class="text"><p>Online Password</p></div>
-                            </div>
-                          </div>
-                          <div
-                            class="option"
-                            onclick="window.location.href='dashboard-disable.html'"
-                          >
-                            <div class="container">
-                              <div class="logo">
-                                <img
-                                  src="../Nura Bank/files/pics/disable.svg"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="text"><p>Disable Account</p></div>
                             </div>
                           </div>
                           <div
@@ -253,7 +255,18 @@
                             <div class="container">
                               <div class="logo">
                                 <img
-                                  src="../Nura Bank/files/pics/more.svg"
+                                  src="../resources/files/pics/disable.svg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="text"><p>Disable Account</p></div>
+                            </div>
+                          </div>
+                          <div class="option" onclick="window.location.href='dashboard-more.html'">
+                            <div class="container">
+                              <div class="logo">
+                                <img
+                                  src="../resources/files/pics/more.svg"
                                   alt=""
                                 />
                               </div>
@@ -272,6 +285,6 @@
       </section>
     </main>
     <footer></footer>
-    <script src="./js/dashboard-js.js" defer></script>
+    <script src="../resources/js/dashboard-js.js" defer></script>
   </body>
 </html>
