@@ -7,4 +7,4 @@ This project showcases my skills in HTML, SCSS and JS. I used these technologies
 
 # Landing Page
 The landing page has a simple and minimal design. The top bar displays the brand name and the buttons for login and create account. The page introduces the bank and the developers briefly. The social media icons are at the bottom of the page.
-![Landing Page]()
+![Landing Page](Nura Bank/ScreenShots/LandingPage.jpeg)
