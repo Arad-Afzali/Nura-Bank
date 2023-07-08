@@ -10,7 +10,7 @@ The landing page has a simple and minimal design. The top bar displays the brand
 
 ![LandingPage](https://github.com/Arad-Afzali/Nura-Bank/assets/76968008/496e694b-0b73-4588-93ff-2a8fa9c8bd78)
 
-# Login and Create Account Page
+# Login and Create Account Pages
 These pages have a simple and refined design that allows user to concentrate on essential information.
 
 ![Login](https://github.com/Arad-Afzali/Nura-Bank/assets/76968008/b10486ef-4577-4f4f-aaa9-17237916c4bd)
